@@ -1,23 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
+import DisplayDetails from './components/DisplayDetails';
+import AddContent from './components/AddContent';
 
 function App() {
   return (
+    
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <br/>
+<DisplayDetails/>
+{/* To display details of a paragraph on toggle & display count of no. of times button is clicked */}
+<br/>
+<AddContent />
+{/* Input data & click 'add' button , on 'add' click= data is displayed on screen and every 5th element have blue background */}
     </div>
   );
 }
